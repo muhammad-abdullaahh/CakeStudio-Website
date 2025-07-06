@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeStudio</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- boxicon links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- header starts -->
+    <nav class="navbar navbar-expand-lg navbar-light header">
+        <div class="container-fluid">
+            <!-- logo starts -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/basics/logo.png" alt="" style="width: 60px; height: 60px;">
+            </a>
+            <!-- logo ends -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- menu list starts -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deals.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">Deals</a>
+                    </li>
+                    <!-- dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">
+                        Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #5D4037;">
+                            <li><a class="dropdown-item" href="fudge.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" onmouseover=" this.style.backgroundColor='#FFF9E6'; this.style.color='#3E2723';" onmouseout="this.style.backgroundColor='#5D4037'; this.style.color='#FFF9E6';">Fudge Brwonies</a></li>
+                            <li><a class="dropdown-item" href="bites.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" onmouseover=" this.style.backgroundColor='#FFF9E6'; this.style.color='#3E2723';" onmouseout="this.style.backgroundColor='#5D4037'; this.style.color='#FFF9E6';">Bites</a></li>
+                            <li><a class="dropdown-item" href="pops.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" onmouseover=" this.style.backgroundColor='#FFF9E6'; this.style.color='#3E2723';" onmouseout="this.style.backgroundColor='#5D4037'; this.style.color='#FFF9E6';">Cake Pops</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">Contact</a>
+                    </li>
+                </ul>
+                <!-- menu list ends -->
+                
+                <!-- search and cart -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #FFF9E6; border-radius: 20px; color: #3E2723;">
+                    <button class="btn1" type="submit">Search</button>
+                </form>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class='bx bxs-shopping-bag icons'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- our deals start -->
+    <div class="container-fluid bg py-5">
+        <center><h1>Fudge Brownies</h1></center>
+        <div class="container mt-4 mb-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 1.webp" class="card-img-top card-image" alt="..."  >
+                        <div class="card-body bg2">
+                            <h3>Chocolate Strawberry Cascade</h3>
+                            <p class="card-text">Dive into the indulgence of our Chocolate Strawberry Cascade Brownie. This decadent treat features a rich, fudgy. . . . . . .</p>
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">View Details</button>
+                            </div>
+                            <!-- modal -->
+                            <div class="modal fade" id="staticBackdrop1" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Chocolate Strawberry Cascade</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 1.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 250 (per piece)</h4>
+                                                <p>Dive into the indulgence of our Chocolate Strawberry Cascade Brownie. This decadent treat features a rich, fudgy brownie base, dripping with velvety, molten chocolate and crowned with luscious strawberry slices. Each bite offers a heavenly combination of intense chocolate flavor and the fresh, tangy sweetness of strawberries. Perfect for those moments when you crave an extra touch of luxury.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 2.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Decadent Drizzle Brownie</h3>
+                            <p class="card-text">Immerse yourself in the pure indulgence of our Decadent Drizzle Brownie. This luxurious treat features a . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Decadent Drizzle Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 2.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 6,000 (for a dozen) </h4>
+                                                <p>Immerse yourself in the pure indulgence of our Decadent Drizzle Brownie. This luxurious treat features a rich, fudgy brownie base, generously drizzled with silky chocolate ganache. Topped with a touch of sea salt to enhance the flavors, each bite delivers an exquisite blend of chocolatey goodness and a hint of saltiness. Perfect for elevating any dessert experience.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 11.jpeg" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Chocolate Fudge Cascade</h3>
+                            <p class="card-text">Dive into the indulgence of our Chocolate Fudge Cascade. This decadent treat features a rich, fudgy . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop3" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Chocolate Fudge Cascade</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 11.jpeg" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 520 (per peice)</h4>
+                                                <p>Dive into the indulgence of our Chocolate Fudge Cascade. This decadent treat features a rich, fudgy brownie base, dripping with velvety, molten chocolate. Each bite offers a heavenly combination of intense chocolate flavor and smooth, creamy richness. Perfect for those moments when you crave an extra touch of luxury.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 12.jpeg" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Berry Chocolate Fusion</h3>
+                            <p class="card-text">Savor the exquisite blend of rich chocolate fudge and sweet strawberries in this irresistible dessert. The . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop4" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Berry Chocolate Fusion</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 12.jpeg" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 2,050</h4>
+                                                <p>Savor the exquisite blend of rich chocolate fudge and sweet strawberries in this irresistible dessert. The fudgy brownie base is perfectly balanced with fresh strawberry pieces, creating a delightful harmony of flavors. Each bite is a delicious fusion of creamy chocolate and fruity sweetness, making it a perfect treat for any occasion.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 17.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Strawberry Cherry Bliss Brownie</h3>
+                            <p class="card-text">Indulge in the perfect harmony of rich chocolate fudge brownie, topped with luscious whipped cream, fresh. . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop5" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Strawberry Cherry Bliss Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 17.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 7,600 (for a dozen)</h4>
+                                                <p>Indulge in the perfect harmony of rich chocolate fudge brownie, topped with luscious whipped cream, fresh strawberries, and juicy cherries. Each bite delivers a delightful blend of creamy, fruity, and chocolatey goodness, making this dessert a true delight for the senses. Perfect for any special occasion or just a sweet treat to enjoy anytime.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 16.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Molten Chocolate Indulgence</h3>
+                            <p class="card-text">Dive into the pure decadence of our Molten Chocolate Indulgence. This fudgy brownie is drenched in luscious, warm chocolate . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop6" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Molten Chocolate Indulgence</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 16.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 4,050 (6 peices)</h4>
+                                                <p>Dive into the pure decadence of our Molten Chocolate Indulgence. This fudgy brownie is drenched in luscious, warm chocolate syrup that drips tantalizingly over the sides, creating an irresistible molten effect. Each bite is a luxurious blend of rich chocolatey goodness and smooth, creamy syrup, making it a must-have for all chocolate lovers.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 3.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Chocolate Lava Brownie</h3>
+                            <p class="card-text">Immerse yourself in the decadence of our Chocolate Lava Brownie. This rich, fudgy brownie is generously drenched in . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop7" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Chocolate Lava Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 3.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 200 (per piece)</h4>
+                                                <p>Immerse yourself in the decadence of our Chocolate Lava Brownie. This rich, fudgy brownie is generously drenched in warm, gooey chocolate syrup that cascades over the edges, creating a molten chocolate experience. Each bite is a blissful combination of intense chocolate flavor and creamy syrup, making it an irresistible treat for any chocolate lover.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 5.avif" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Midnight Crunch Brownie</h3>
+                            <p class="card-text">Experience the deep, intense flavor of our Midnight Crunch Brownie. This dark, dry brownie . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop8" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Midnight Crunch Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 5.avif" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 2,500 (for a dozen)</h4>
+                                                <p>Experience the deep, intense flavor of our Midnight Crunch Brownie. This dark, dry brownie features a rich, cocoa-forward profile with a delightful crunch that adds texture to every bite. Perfectly balanced for those who enjoy a more sophisticated and less sweet chocolate treat, this brownie is an ideal companion for a hot cup of coffee or a late-night snack.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 9.jpeg" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Chocolate Crown Brownie</h3>
+                            <p class="card-text">Enjoy the pure indulgence of our Chocolate Crown Brownie. This rich, fudgy brownie is topped with a generous layer of . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop9" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Chocolate Crown Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 9.jpeg" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 250 (per piece)</h4>
+                                                <p>Enjoy the pure indulgence of our Chocolate Crown Brownie. This rich, fudgy brownie is topped with a generous layer of smooth, velvety chocolate ganache. The chocolate on top adds an extra dimension of creamy richness to each bite, making it a perfect treat for chocolate enthusiasts. Perfect for satisfying those intense chocolate cravings with a touch of elegance.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 20.jpeg" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Rocky Road Brownie</h3>
+                            <p class="card-text">Dive into the rich indulgence of our Rocky Road Brownie. This decadent treat features a fudgy chocolate. . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop10" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Rocky Road Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 20.jpeg" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 4,400</h4>
+                                                <p>Dive into the rich indulgence of our Rocky Road Brownie. This decadent treat features a fudgy chocolate base, generously topped with crunchy nuts and luscious chocolate chunks. Each bite offers a delightful mix of smooth, creamy chocolate and satisfying nutty crunch, making it a perfect treat for those who love texture and flavor in every bite.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 18.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Choco Biscuit Crunch Brownie</h3>
+                            <p class="card-text">Indulge in the ultimate chocolate experience with our Choco Biscuit Crunch Brownie. This rich, fudgy chocolate brownie . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop11" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Choco Biscuit Crunch Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 18.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 450 (per piece)</h4>
+                                                <p>Indulge in the ultimate chocolate experience with our Choco Biscuit Crunch Brownie. This rich, fudgy chocolate brownie is generously loaded with chunks of chocolate and crunchy biscuits on top, creating a delightful texture contrast in every bite. The combination of smooth, creamy chocolate and the satisfying crunch of biscuits makes this brownie an irresistible treat for any chocolate lover.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 13.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Raspberry Chocolate Harmony</h3>
+                            <p class="card-text">Savor the exquisite combination of rich chocolate and tangy raspberries in our Raspberry Chocolate Harmony . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop12" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Raspberry Chocolate Harmony</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 13.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 1,120 (6 piece)</h4>
+                                                <p>Savor the exquisite combination of rich chocolate and tangy raspberries in our Raspberry Chocolate Harmony Brownie. This decadent treat features a moist, fudgy brownie base infused with bursts of raspberry flavor, topped with a luscious chocolate ganache and garnished with fresh raspberry pieces. Each bite delivers a perfect balance of sweet and tart, creating a symphony of flavors that's truly irresistible.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn1">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer starts -->
+    <footer class="footer text-center text-lg-start">
+        <!-- social links started -->
+        <section class="footer-top d-flex justify-content-between p-4">
+            <div class="me-5">
+                <span>Get connected with us our social media:</span>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=61568520209314&mibextid=ZbWKwL" class="icon me-4">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/_.cakeestudio/profilecard/?igsh=NTVvdW1sbThmcTkz" class="icon me-4">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a href="https://wa.me/message/3CUXWXGJ4TABA1" class="icon me-4">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>
+        </section>
+        <!-- social links ends -->
+  
+        <!-- main footer starts -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content about the cakestudio -->
+                        <h2 class="text-uppercase fw-bold">CakeStudio</h2>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; background-color: #FFF9E6; height: 2px"/>
+                        <p>CakeStudio creates stunning, delicious cakes for all your special moments. With quality ingredients and creative designs, we bring your celebrations to life. Every cake is crafted with love to make your memories even sweeter.</p>
+                    </div>
+        
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- quick access links -->
+                        <h6 class="text-uppercase fw-bold">Quick Access</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #FFF9E6; height: 2px"/>
+                        <p>
+                            <a href="index.html" class="footer-text">Home</a>
+                        </p>
+                        <p>
+                            <a href="deals.html" class="footer-text">Deals</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="footer-text">Contact</a>
+                        </p>
+                        <p>
+                            <a href="cart.html" class="footer-text">Your Cart</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- product links -->
+                        <h6 class="text-uppercase fw-bold">Menu Items</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #FFF9E6; height: 2px"/>
+                        <p>
+                            <a href="fudge.html" class="footer-text">Fudge Brownies</a>
+                        </p>
+                        <p>
+                            <a href="pops.html" class="footer-text">Cake Pops</a>
+                        </p>
+                        <p>
+                            <a href="bites.html" class="footer-text">Bites</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- contact details -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #FFF9E6; height: 2px"/>
+                        <p><i class='bx bxs-store icons me-2'></i>C36/1 Block 13, <br>Gulistan-e-Jauhar, Karachi</p>
+                        <p><i class='bx bxs-phone-call icons me-2' ></i>+033 43341779</p>
+                        <p><i class='bx bxs-phone-call icons me-2' ></i>+033 43341779</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main footer ends  -->
+  
+        <!-- copyright details starts -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="footer-text" href="https://mdbootstrap.com/">CakeStudio.com</a>
+        </div>
+        <!-- copyright details ends -->
+    </footer>
+    <!-- javascript links -->
+    <script src="js/script.js"></script>
+
+    <!-- boostrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

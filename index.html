@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeStudio</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- boxicon links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- header starts -->
+    <nav class="navbar navbar-expand-lg navbar-light header">
+        <div class="container-fluid">
+            <!-- logo starts -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/basics/logo.png" alt="" style="width: 60px; height: 60px;">
+            </a>
+            <!-- logo ends -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- menu list starts -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="deals.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">Deals</a>
+                    </li>
+                    <!-- dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">
+                        Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #5D4037;">
+                            <li><a class="dropdown-item" href="fudge.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" onmouseover=" this.style.backgroundColor='#FFF9E6'; this.style.color='#3E2723';" onmouseout="this.style.backgroundColor='#5D4037'; this.style.color='#FFF9E6';">Fudge Brwonies</a></li>
+                            <li><a class="dropdown-item" href="bites.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" onmouseover=" this.style.backgroundColor='#FFF9E6'; this.style.color='#3E2723';" onmouseout="this.style.backgroundColor='#5D4037'; this.style.color='#FFF9E6';">Bites</a></li>
+                            <li><a class="dropdown-item" href="pops.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;" onmouseover=" this.style.backgroundColor='#FFF9E6'; this.style.color='#3E2723';" onmouseout="this.style.backgroundColor='#5D4037'; this.style.color='#FFF9E6';">Cake Pops</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: #FFF9E6; font-family: 'Sour Gummy', serif;">Contact</a>
+                    </li>
+                </ul>
+                <!-- menu list ends -->
+                
+                <!-- search and cart -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #FFF9E6; border-radius: 20px; color: #3E2723;">
+                    <button class="btn1" type="submit">Search</button>
+                </form>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class='bx bxs-shopping-bag icons'></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- slider starts -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/basics/bannar1.png" class="d-block w-100 slide-pic" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/basics/bannar3.png" class="d-block w-100 slide-pic" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- deals section -->
+    <section class="bg">
+        <h1 class="ms-5 ps-3 mt-5">Our Deals</h1>
+        <div class="container mt-2 mb-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/deals/deal1.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Creamy Fudge Combo</h3>
+                            <p class="card-text"> Soft, fluffy cupcakes in decadent flavors like classic red velvet, white chocolate lavender, and mocha swirl.. . . . . . . .</p>
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop1" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Creamy Fudge Combo</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/deals/deal1.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">6 pieces for just Rs. 1500</h4>
+                                                <p> Soft, fluffy cupcakes in decadent flavors like classic red velvet, white chocolate lavender, and mocha swirl. Perfectly portioned for a personal indulgence..</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html">                                 <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a
+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/deals/deal10.webp" class="card-img-top card-image"card-image alt="...">
+                        <div class="card-body bg2">
+                            <h3>Caramel Crunch</h3>
+                            <p class="card-text">A collection of delicately layered cakes featuring unique flavor harmonies, such as raspberry-vanilla. . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabe2" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabe2">Caramel Crunch</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/deals/deal10.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">12 pieces for just Rs. 2500</h4>
+                                                <p>A collection of delicately layered cakes featuring unique flavor harmonies, such as raspberry-vanilla, caramel-pecan, and chocolate-orange. Each bite is a melody of taste and texture.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/deals/deal11.webp" class="card-img-top card-image"card-image alt="...">
+                        <div class="card-body bg2">
+                            <h3>Dreamy Velvet Layers</h3>
+                            <p class="card-text">Indulge in the classic elegance of our Red Velvet Cake, layered with rich cream cheese frosting... . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop3" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Dreamy Velvet Layers</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/deals/deal11.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">12 pieces for just Rs. 2000</h4>
+                                                <p>Indulge in the classic elegance of our Red Velvet Cake, layered with rich cream cheese frosting. Each bite is soft, smooth, and slightly tangy, with a subtle hint of cocoa. Perfect for celebrations or indulgent moments..</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center><a href="deals.html"><button class="btn2 mt-4">View More</button></a></center>   
+        </div>
+    </section>
+
+    <!-- bites section starts -->
+    <section class="bg4">
+        <h1 class="ms-5 ps-3 mt-5">Bites</h1>
+        <div class="container mt-2 mb-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/bites/Cb 3.webp" class="card-img-top card-image" alt="..."  >
+                        <div class="card-body bg2">
+                            <h3>Classic Vanilla Delight</h3>
+                            <p class="card-text">Experience the timeless elegance of a moist and fluffy vanilla cake bite, made with pure vanilla extract and . . . . . . .</p>
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">View Details</button>
+                            </div>
+                            <!-- modal -->
+                            <div class="modal fade" id="staticBackdrop4" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Classic Vanilla Delight</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/bites/Cb 3.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 4,000 (for a dozen)</h4>
+                                                <p>Experience the timeless elegance of a moist and fluffy vanilla cake bite, made with pure vanilla extract and topped with smooth, rich buttercream. This bite-sized treat offers a perfect balance of sweetness and texture, ideal for those who love the simplicity of classic flavors.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/bites/Cb 4.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Berry Burst Bliss</h3>
+                            <p class="card-text">Bursting with the vibrant flavors of mixed berries, this cake bite features a moist berry-infused base . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop5" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Berry Burst Bliss</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/bites/Cb 4.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 1,200 (6 peices)</h4>
+                                                <p>Bursting with the vibrant flavors of mixed berries, this cake bite features a moist berry-infused base topped with a tangy cream cheese glaze. Garnished with fresh fruit, it’s a refreshing, fruity delight that’s as visually appealing as it is delicious.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/bites/Cb 6.avif" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Creamo Chocolate Heaven</h3>
+                            <p class="card-text">Indulge your chocolate cravings with this decadent double chocolate cake bite. Made with premium cocoa . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop6" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Creamo Chocolate Heaven</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/bites/Cb 6.avif" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 5,500 (for a dozen)</h4>
+                                                <p>Indulge your chocolate cravings with this decadent double chocolate cake bite. Made with premium cocoa and topped with a velvety chocolate ganache, this treat is pure chocolate bliss. Finished with chocolate shavings for an extra touch of luxury.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center><a href="bites.html"><button class="btn2 mt-4">View More</button></a></center>   
+        </div>
+    </section>
+
+    <!-- discount bannar -->
+    <div class="discount">
+    </div>
+
+    <!-- fudge section starts -->
+    <section class="bg">
+        <h1 class="ms-5 ps-3 mt-5">Fudge Brownies</h1>
+        <div class="container mt-2 mb-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 1.webp" class="card-img-top card-image" alt="..."  >
+                        <div class="card-body bg2">
+                            <h3>Chocolate Strawberry Cascade</h3>
+                            <p class="card-text">Dive into the indulgence of our Chocolate Strawberry Cascade Brownie. This decadent treat features a rich, fudgy. . . . . . .</p>
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">View Details</button>
+                            </div>
+                            <!-- modal -->
+                            <div class="modal fade" id="staticBackdrop7" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Chocolate Strawberry Cascade</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 1.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 250 (per piece)</h4>
+                                                <p>Dive into the indulgence of our Chocolate Strawberry Cascade Brownie. This decadent treat features a rich, fudgy brownie base, dripping with velvety, molten chocolate and crowned with luscious strawberry slices. Each bite offers a heavenly combination of intense chocolate flavor and the fresh, tangy sweetness of strawberries. Perfect for those moments when you crave an extra touch of luxury.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 2.webp" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Decadent Drizzle Brownie</h3>
+                            <p class="card-text">Immerse yourself in the pure indulgence of our Decadent Drizzle Brownie. This luxurious treat features a . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop8" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Decadent Drizzle Brownie</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 2.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 6,000 (for a dozen) </h4>
+                                                <p>Immerse yourself in the pure indulgence of our Decadent Drizzle Brownie. This luxurious treat features a rich, fudgy brownie base, generously drizzled with silky chocolate ganache. Topped with a touch of sea salt to enhance the flavors, each bite delivers an exquisite blend of chocolatey goodness and a hint of saltiness. Perfect for elevating any dessert experience.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/fudge/Fb 11.jpeg" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Chocolate Fudge Cascade</h3>
+                            <p class="card-text">Dive into the indulgence of our Chocolate Fudge Cascade. This decadent treat features a rich, fudgy . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop9" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Chocolate Fudge Cascade</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/fudge/Fb 11.jpeg" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 520 (per peice)</h4>
+                                                <p>Dive into the indulgence of our Chocolate Fudge Cascade. This decadent treat features a rich, fudgy brownie base, dripping with velvety, molten chocolate. Each bite offers a heavenly combination of intense chocolate flavor and smooth, creamy richness. Perfect for those moments when you crave an extra touch of luxury.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center><a href="fudge.html"><button class="btn2 mt-4">View More</button></a></center>   
+        </div>
+    </section>
+
+    <!-- pops section starts -->
+    <section class="bg4">
+        <h1 class="ms-5 ps-3 mt-5">Cake Pops</h1>
+        <div class="container mt-2 mb-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/pops/Cp 1.webp" class="card-img-top card-image" alt="..."  >
+                        <div class="card-body bg2">
+                            <h3>Classic Chocolate Pop</h3>
+                            <p class="card-text">A soft, fluffy vanilla and chocolate cake center dipped in creamy white and milky- brown chocolate and topped with . . . . . . .</p>
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">View Details</button>
+                            </div>
+                            <!-- modal -->
+                            <div class="modal fade" id="staticBackdrop10" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Classic Chocolate Pop</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/pops/Cp 1.webp" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 415 (per piece)</h4>
+                                                <p>A soft, fluffy vanilla and chocolate cake center dipped in creamy white and milky- brown chocolate and topped with colorful sprinkles. This cake pop offers a classic, comforting flavor, perfect for all ages and occasions. Its sweet, delicate taste pairs wonderfully with the fun, festive sprinkles for a cheerful treat.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/pops/Cp 2.avif" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Caramel Temptation pop</h3>
+                            <p class="card-text">A velvety caramel-flavored cake center is dipped in salted caramel chocolate and finished with a light sprinkle of. . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop11" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Caramel Temptation pop</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/pops/Cp 2.avif" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 1,230 (6 peices)</h4>
+                                                <p>A velvety caramel-flavored cake center is dipped in salted caramel chocolate and finished with a light sprinkle of sea salt. The sweet and salty contrast is deliciously balanced, making it an irresistible treat. Each bite offers a delightful blend of rich caramel with a hint of savory saltiness.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg2">
+                        <img src="images/products/pops/Cp 3.avif" class="card-img-top card-image" alt="...">
+                        <div class="card-body bg2">
+                            <h3>Unicorn Sparkle Pop</h3>
+                            <p class="card-text">Enchant your taste buds with this whimsical cake pop, adorned with vibrant, multi-colored sprinkles and a touch . . . . . . .</p>
+                            <!-- Corrected Button with Modal -->
+                            <div class="d-grid gap-2 d-md-block bg2">
+                                <button class="btn1" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">View Details</button>
+                            </div>
+                            <!-- Modal Structure -->
+                            <div class="modal fade" id="staticBackdrop12" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg2">
+                                            <h3 class="modal-title modal-heading" id="staticBackdropLabel">Unicorn Sparkle Pop</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body bg">
+                                            <div class="modal-image">
+                                                <img src="images/products/pops/Cp 3.avif" class="modal-image" alt="">
+                                            </div>
+                                            <div class="model-text ms-3">
+                                                <h4 class="price">Rs. 3,300 (for a dozen)</h4>
+                                                <p>Enchant your taste buds with this whimsical cake pop, adorned with vibrant, multi-colored sprinkles and a touch of edible glitter. The delightful vanilla cake is coated in a magical layer of white chocolate and decorated with a tiny fondant unicorn horn. Perfect for adding a dash of fantasy to any occasion, this pop is sure to bring a smile to everyone's face.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg2">
+                                            <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                                            <a href="cart.html"><button type="button" class="btn1">Add to Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center><a href="pops.html"><button class="btn2 mt-4">View More</button></a></center>   
+        </div>
+    </section>
+
+    <!-- feedback section starts -->
+    <section class="bg">
+        <h1 class="ms-5 ps-3 mt-5">Customer Feedbacks</h1>
+        <div class="container mt-2 mb-4">
+            <div class="feedback-slider">
+                <div class="feedback-card">
+                    <div class="card-top">
+                        <img src="images/basics/customer2.jpg" alt="Customer" class="customer-pic">
+                        <h3>Huda-al-Noor</h3>
+                    </div>
+                    <p class="feedback-content">"I can't get enough of CakeStudio's fudge! They combine perfect flavor with stunning designs that always impress."</p>
+                    <div class="feedback-rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="card-top">
+                        <img src="images/basics/customer6.jpg" alt="Customer" class="customer-pic">
+                        <h3>Asad Arshad</h3>
+                    </div>
+                    <p class="feedback-content">"CakeStudio is go-to for any celebration! Their cake pops are not only tasty but also beautifully decorated."</p>
+                    <div class="feedback-rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="card-top">
+                        <img src="images/basics/customer3.jpg" alt="Customer" class="customer-pic">
+                        <h3>Shafaq Samad</h3>
+                    </div>
+                    <p class="feedback-content">"The best fudge brownies I've ever had! They never fail to impress with both the taste and design of their creations"</p>
+                    <div class="feedback-rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="card-top">
+                        <img src="images/basics/customer4.jpg" alt="Customer" class="customer-pic">
+                        <h3>Bushra Fatima</h3>
+                    </div>
+                    <p class="feedback-content">"I love ordering from them! Their cakes are moist, flavorful, and always make my events extra special."</p>
+                    <div class="feedback-rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="card-top">
+                        <img src="images/basics/customer7.jpg" alt="Customer" class="customer-pic">
+                        <h3>Muzzammil Suad</h3>
+                    </div>
+                    <p class="feedback-content">"It is a must-try! Amazing flavor and gorgeous cake designs that always leave a lasting impression."</p>
+                    <div class="feedback-rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="card-top">
+                        <img src="images/basics/customer8.jpg" alt="Customer" class="customer-pic">
+                        <h3>Bilal Abbass</h3>
+                    </div>
+                    <p class="feedback-content">"CakeStudio Bakery never disappoints! Their cakes are a perfect blend of taste and artistry, making every celebration unforgettable."</p>
+                    <div class="feedback-rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="card-top">
+                        <img src="images/basics/customer9.jpg" alt="Customer" class="customer-pic">
+                        <h3>Hamza Sohail</h3>
+                    </div>
+                    <p class="feedback-content">"I always trust CakeStudio for my special events! Their items are not only delicious but also beautifully crafted to perfection"</p>
+                    <div class="feedback-rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- about us section starts -->
+    <section class="bg4">
+        <h1 class="ms-5 ps-3 mt-5">About CakeStudio</h1>
+        <div class="container mt-2 mb-4">
+            <div class="aboutus col-md-6 col-xl-12">
+                <div class="aboutusimg">
+                    <img src="images/basics/WhatsApp_Image_2024-11-28_at_14.45.49_6df9cbd6-removebg-preview.png" alt="" class="aboutus-img">
+                </div>
+                <div class="aboutus-content col-md-6">
+                    <p>
+                        Welcome to CakeStudio, where every cake tells a story and every bite is a moment of joy. Founded with a passion for baking and a love for creating unforgettable experiences, CakeStudio is more than just a bakery—it's a destination for those who appreciate artistry, flavor, and a touch of magic in every creation. <br><br>
+                        At CakeStudio, we believe that a cake is more than just a dessert; it’s the centerpiece of your celebration. Whether it’s a wedding, a birthday, an anniversary, or any special occasion, we are committed to crafting cakes that not only look stunning but also taste extraordinary. Our team of expert bakers and designers work closely with you to bring your vision to life, ensuring that every detail is just as you imagined. . . . . . 
+                    </p>
+                    <center><a href="about.html"><button class="btn2 mt-4">View More</button></a></center>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer starts -->
+    <footer class="footer text-center text-lg-start">
+        <!-- social links started -->
+        <section class="footer-top d-flex justify-content-between p-4">
+            <div class="me-5">
+                <span>Get connected with us our social media:</span>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=61568520209314&mibextid=ZbWKwL" class="icon me-4">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/_.cakeestudio/profilecard/?igsh=NTVvdW1sbThmcTkz" class="icon me-4">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a href="https://wa.me/message/3CUXWXGJ4TABA1" class="icon me-4">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>
+        </section>
+        <!-- social links ends -->
+  
+        <!-- main footer starts -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content about the cakestudio -->
+                        <h2 class="text-uppercase fw-bold">CakeStudio</h2>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; background-color: #FFF9E6; height: 2px"/>
+                        <p>CakeStudio creates stunning, delicious cakes for all your special moments. With quality ingredients and creative designs, we bring your celebrations to life. Every cake is crafted with love to make your memories even sweeter.</p>
+                    </div>
+        
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- quick access links -->
+                        <h6 class="text-uppercase fw-bold">Quick Access</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #FFF9E6; height: 2px"/>
+                        <p>
+                            <a href="index.html" class="footer-text">Home</a>
+                        </p>
+                        <p>
+                            <a href="deals.html" class="footer-text">Deals</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="footer-text">Contact</a>
+                        </p>
+                        <p>
+                            <a href="cart.html" class="footer-text">Your Cart</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- product links -->
+                        <h6 class="text-uppercase fw-bold">Menu Items</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #FFF9E6; height: 2px"/>
+                        <p>
+                            <a href="fudge.html" class="footer-text">Fudge Brownies</a>
+                        </p>
+                        <p>
+                            <a href="pops.html" class="footer-text">Cake Pops</a>
+                        </p>
+                        <p>
+                            <a href="bites.html" class="footer-text">Bites</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- contact details -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #FFF9E6; height: 2px"/>
+                        <p><i class='bx bxs-store icons me-2'></i>C36/1 Block 13, <br>Gulistan-e-Jauhar, Karachi</p>
+                        <p><i class='bx bxs-phone-call icons me-2' ></i>+033 43341779</p>
+                        <p><i class='bx bxs-phone-call icons me-2' ></i>+033 43341779</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main footer ends  -->
+  
+        <!-- copyright details starts -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="footer-text" href="https://mdbootstrap.com/">CakeStudio.com</a>
+        </div>
+        <!-- copyright details ends -->
+    </footer>
+
+    <!-- javascript links -->
+    <script src="js/script.js"></script>
+
+    <!-- boostrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
