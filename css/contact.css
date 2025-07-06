@@ -1,0 +1,101 @@
+.contact{
+    display: flex;
+}
+.phone-number, .shop{
+    background-color:burlywood;
+    height:200px;
+    width:200px;
+    margin:20px;
+    text-align: center;
+    display:inline-block;
+    vertical-align: top;
+    border-width: 2px;
+    border-radius: 10%;
+}
+.phone-number{
+    padding:40px;
+    padding-left: 30px;
+    padding-right: 30px ;
+
+}
+.shop{
+    padding:30px;
+}
+.map{
+    margin:20px;
+    background-color:burlywood;
+    border-width: 2px;
+    border-radius: 20px;
+    height: 300px;
+    width:450px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.contact-info, .contact-form{
+    display:inline-block;
+    vertical-align: top;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+.contact-info{
+    padding-left: 100px;
+}
+.info{
+    width:450px;
+}
+.contact-form{
+    padding-right: 60px;
+    padding-left: 100px;
+    text-align: left;
+}
+textarea{
+    width: 100%;
+    padding:10px;
+    border-radius: 10px;
+    height:50px;
+    background-color:rgb(222, 184, 135, 0.5);
+    border:0.5px solid rgb(222, 184, 135, 0.5) ;
+    margin-bottom: 20px;
+}
+button{
+    width: 100%;
+    border-radius: 20px;
+    padding:5px;
+    border:0.5px solid;
+    background-color: #3E2723;
+    color: aliceblue;
+    margin-top: 50px;
+}
+.input-form{
+    width:100%;
+    border-radius: 10px;
+    border:0.5px solid rgb(222, 184, 135, 0.5) ;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color:rgb(222, 184, 135, 0.5);
+}
+.input h3{
+    margin-bottom: 5px;
+}
+.info p{
+    margin-bottom: 5px;
+}
+.contact-Us{
+    color:#3E2723;
+}
+#complainType{
+    width:100%;
+    background-color:rgb(222, 184, 135, 0.5);
+    border:0.5px solid rgb(222, 184, 135, 0.5) ;
+}
+label{
+    margin: 5px;
+    font-family: var(--font-family-2);
+    letter-spacing: 0.1rem;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--heading-color);
+}
